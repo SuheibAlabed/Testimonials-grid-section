@@ -18,13 +18,15 @@ body {
     "area1 area1 area1 area2 area3"
     "area4 area5 area5 area5 area3";
   margin: 5rem 10rem 10rem 10rem;
+  grid-template-rows: repeat(2, 1fr);
   justify-content: center;
+  align-content: center;
   grid-gap: 2rem;
 }
 .text-title .background {
   position: absolute;
   top: 0;
-  margin-top: 5%;
+  margin-top: 2%;
   margin-left: 50%;
   opacity: 70%;
 }
@@ -36,13 +38,13 @@ body {
   padding: 40px;
   width: auto;
   position: relative;
+  box-shadow: 5px 9px black 10px;
 }
 .Item2 {
   grid-area: area2;
   background: hsl(217, 19%, 35%);
   border-radius: 10px;
   padding: 40px;
-  word-break: break-all;
 }
 .Item3 {
   grid-area: area3;
@@ -50,7 +52,6 @@ body {
   background: hsl(0, 0%, 100%);
   border-radius: 10px;
   padding: 40px;
-  word-break: break-all;
 }
 .Item4 {
   grid-area: area4;
@@ -81,13 +82,15 @@ body {
   opacity: 50%;
 }
 .text-title {
+  font-size: 20px;
   font-weight: 600;
-  margin-bottom: 3rem;
-  font-size: 23px;
+  margin-bottom: 16px;
+  line-height: 24px;
 }
 .text2 {
   opacity: 70%;
-  font-size: 22px;
+  font-size: 13px;
+  line-height: 18px;
 }
 @media screen and (max-width: 415px) {
   .container {
