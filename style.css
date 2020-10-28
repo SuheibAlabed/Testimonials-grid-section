@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,400;0,600;0,700;1,600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Barlow Semi Condensed;
+}
+body {
+  color: white;
+  background: #edf2f8;
+  font-size: 13px;
+  overflow-x: hidden;
+}
+
+.container {
+  display: grid;
+  grid-template-areas:
+    "area1 area1 area2 area3"
+    "area4 area5 area5 area3";
+  margin: 5rem 10rem 10rem 10rem;
+  justify-content: center;
+  grid-gap: 2rem;
+}
+.text-title .background {
+  position: absolute;
+  top: 0;
+  margin-top: 5%;
+  margin-left: 50%;
+  opacity: 70%;
+}
+
+.Item1 {
+  grid-area: area1;
+  background: hsl(263, 55%, 52%);
+  border-radius: 10px;
+  padding: 40px;
+  width: auto;
+  position: relative;
+}
+.Item2 {
+  grid-area: area2;
+  background: hsl(217, 19%, 35%);
+  border-radius: 10px;
+  padding: 40px;
+  word-break: break-all;
+}
+.Item3 {
+  grid-area: area3;
+  color: #18202d;
+  background: hsl(0, 0%, 100%);
+  border-radius: 10px;
+  padding: 40px;
+  word-break: break-all;
+}
+.Item4 {
+  grid-area: area4;
+  color: #18202d;
+  background: hsl(0, 0%, 100%);
+  border-radius: 10px;
+  padding: 40px;
+}
+.Item5 {
+  grid-area: area5;
+  background: hsl(219, 29%, 14%);
+  border-radius: 10px;
+  padding: 40px;
+}
+.profileImg {
+  display: flex;
+
+  margin-bottom: 2rem;
+}
+.profileImg img {
+  border-radius: 40px;
+  border: 1px hsl(0, 0%, 100%) solid;
+  margin-right: 1rem;
+}
+.profileImg p {
+  font-weight: 600;
+}
+.profileImg p:nth-of-type(2) {
+  opacity: 50%;
+}
+.text-title {
+  font-weight: 600;
+  margin-bottom: 3rem;
+  font-size: 23px;
+}
+.text2 {
+  opacity: 70%;
+  font-size: 22px;
+}
+@media screen and (max-width: 415px) {
+  .container {
+    margin: 5rem 1rem 0 1rem;
+    grid-template-areas:
+      "area1"
+      "area2"
+      "area3"
+      "area4"
+      "area5";
+  }
+}
