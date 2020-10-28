@@ -15,8 +15,8 @@ body {
 .container {
   display: grid;
   grid-template-areas:
-    "area1 area1 area2 area3"
-    "area4 area5 area5 area3";
+    "area1 area1 area1 area2 area3"
+    "area4 area5 area5 area5 area3";
   margin: 5rem 10rem 10rem 10rem;
   justify-content: center;
   grid-gap: 2rem;
@@ -67,7 +67,6 @@ body {
 }
 .profileImg {
   display: flex;
-
   margin-bottom: 2rem;
 }
 .profileImg img {
